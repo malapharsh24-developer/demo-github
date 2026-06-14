@@ -5,8 +5,11 @@
 }
 
 :root {
-    --dark-bg: #282828;
+    --dark-bg: #212121;
     --text-light: rgb(255, 248, 248);
+    --dark-bg-2: #353535;
+    --blue: rgb(12, 97, 255);
+    --yellow : rgb(255, 234, 2);
 }
 
 main {
@@ -22,15 +25,58 @@ main {
     padding: 2rem 0;
     margin: 0 auto;
     text-align: center;
-    border-bottom : 1px solid var(--text-light);
+    border-bottom: 1px solid var(--text-light);
 
-    & h1{
+    & h1 {
         margin: 1rem 0;
         font-size: 2.5rem;
     }
 
-    & p{
+    & p {
         font-size: 1.5rem;
     }
 
+}
+
+.git-commands-section {
+    width: 100%;
+    margin : 2rem auto;
+    padding: 1rem 0.7rem;
+    /* background-color: var(--dark-bg-2); */
+    text-align: center;
+
+    & h2 {
+        font-size: 1.5rem;
+        background-color: var(--blue);
+        display: inline-block;
+        max-width: 30rem;
+        padding: 0.7rem;
+        border-radius: 0.5rem;
+    }
+
+   .git-commands {
+
+    border-bottom : 1px solid white;
+    padding: 2rem 0;
+
+     & dl {
+
+        & .git-title {
+            font-size: 1.2rem;
+            margin: 1rem auto;
+            color : var(--yellow);
+            font-weight :500;
+        }
+
+        & .git-command {
+            font-style: italic;
+            background-color: var(--dark-bg-2);
+            max-width : 50%;
+            margin : 0 auto;
+            border-radius : 0.5rem;
+            padding: 2rem;
+            font-size : 1.2rem;
+        }
+    }
+   }
 }
